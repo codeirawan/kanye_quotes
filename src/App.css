@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Graduate&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Grenze&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Mansalva&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Mansalva&display=swap");
+body {
+  margin: 0;
+}
+
+.container {
+  min-height: 100vh;
+  font-size: 30px;
+}
+
+@media (max-width: 840px) {
+  .container {
+    padding-bottom: 10px;
+  }
+}
+
+.container--college {
+  font-family: "Graduate", sans-serif;
+}
+
+.container--pablo {
+  background: #F69561;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container--graduation {
+  background: #73328A;
+  color: #F30A91;
+  font-family: "Alfa Slab One", sans-serif;
+}
+
+.container--ye {
+  background: #42658E;
+  color: #17F141;
+  font-family: "Mansalva", cursive;
+}
+
+.container--fantasy {
+  background: #EF2341;
+  color: #FAE62D;
+  font-family: "Grenze", serif;
+}
+
+.container--ghosts {
+  background: #85BCC6;
+  font-family: "East Sea Dokdo", sans-serif;
+  color: #FFF8E8;
+  text-transform: uppercase;
+}
+
+.container--heartbreak {
+  background: #CADFE0;
+  color: #FB1F00;
+  font-family: "Darker Grotesque", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+.container--registration {
+  background: #5B2D0B;
+  color: #C5AA01;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.container--throne {
+  background: black;
+  color: #CEB87E;
+  font-family: "Cinzel", serif;
+}
+
+.container--yeezus {
+  background: #C8EDF1;
+  font-family: "arial-black";
+  text-transform: uppercase;
+}
+
+.quote-container {
+  margin: 50px 10vw;
+  text-align: center;
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 200px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 840px) {
+  .quote {
+    height: 420px;
+  }
+}
+
+.button {
+  height: 50px;
+  width: 200px;
+  margin-top: 25px;
+  border: 2px solid black;
+  outline: none;
+  font-weight: 600;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button .icon {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.album-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 25vh;
+  padding: 0 25px;
+  border-bottom: 5px solid;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.album-container--college {
+  background: #3b0316;
+  border-bottom: 5px solid #FED100;
+  color: #FED100;
+}
+
+.album-container--registration {
+  background: black;
+  border-bottom: 5px solid #C5AA01;
+}
+
+.album-container--fantasy {
+  border-bottom: 5px solid #09786C;
+}
+
+.album-container--yeezus {
+  border-bottom: 5px solid #FE1D01;
+}
+
+.album-container--ghosts {
+  background: #DD5E86;
+}
+
+@media (max-width: 840px) {
+  .album-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.album-container select {
+  height: 30px;
+  margin: 25px;
+  outline: none;
+}
+/*# sourceMappingURL=App.css.map */

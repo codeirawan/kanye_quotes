@@ -1,0 +1,234 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap');
+$ghostsFont: 'East Sea Dokdo', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=East+Sea+Dokdo|Graduate&display=swap');
+$collegeFont: 'Graduate', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
+$graduationFont: 'Alfa Slab One', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+$heartbreakFont: 'Darker Grotesque', sans-serif;
+
+@import url('https://fonts.googleapis.com/css?family=Grenze&display=swap');
+$fantasyFont: 'Grenze', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Mansalva&display=swap');
+$yeFont: 'Mansalva', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Mansalva&display=swap');
+$throneFont: 'Cinzel', serif;
+
+// Colour variables
+$college: #3b0316;
+$college2: #FED100;
+
+$registration: #5B2D0B;
+$registration2: #C5AA01;
+
+$graduation: #F30A91;
+$graduation2: #73328A;
+
+$heartbreak: #CADFE0;
+$heartbreak2: #FB1F00;
+
+$fantasy: #EF2341;
+$fantasy2: #09786C;
+$fantasy3: #FAE62D;
+
+$throne: #CEB87E;
+
+$yeezus: #C8EDF1;
+$yeezus2: #FE1D01;
+
+$pablo: #F69561;
+
+$ye: #42658E;
+$ye2: #17F141;
+
+$ghosts: #DD5E86;
+$ghosts2: #85BCC6;
+$ghosts3: #FFF8E8;
+
+$mobile: 840px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}){
+        @content;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+
+    font-size: 30px;
+
+    @include mobile {
+        padding-bottom: 10px;
+    }
+
+    &--college {
+        font-family: $collegeFont;
+    }
+
+    &--pablo {
+        background: $pablo;
+
+        font-family: Helvetica;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    &--graduation {
+        background: $graduation2;
+
+        color: $graduation;
+        font-family: $graduationFont;
+    }
+
+    &--ye {
+        background: $ye;
+
+        color: $ye2;
+        font-family: $yeFont;
+    }
+
+    &--fantasy {
+        background: $fantasy;
+
+        color: $fantasy3;
+        font-family: $fantasyFont;
+    }
+
+    &--ghosts {
+        background: $ghosts2;
+
+        font-family: $ghostsFont;
+        color: $ghosts3;
+        text-transform: uppercase;
+    }
+
+    &--heartbreak {
+        background: $heartbreak;
+
+        color: $heartbreak2;
+        font-family: $heartbreakFont;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+
+    &--registration {
+        background: $registration;
+
+        color: $registration2;
+        font-family: "Times New Roman", sans-serif;
+    }
+
+    &--throne {
+        background: black;
+
+        color: $throne;
+
+        font-family: $throneFont;
+    }
+
+    &--yeezus {
+        background: $yeezus;
+
+        font-family: "arial-black";
+        text-transform: uppercase;
+    }
+}
+
+.quote-container {
+    margin: 50px 10vw;
+
+    text-align: center;
+}
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+
+    transition: all 0.2s ease-in-out;
+
+    @include mobile {
+        height: 420px;
+    }
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+
+    margin-top: 25px;
+
+    border: 2px solid black;
+    outline: none;
+    font-weight: 600;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    .icon {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+}
+
+.album-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 25vh;
+
+    padding: 0 25px;
+    border-bottom: 5px solid;
+
+    transition: all 0.2s ease-in-out;
+
+    &--college {
+        background: $college;
+        border-bottom: 5px solid $college2;
+        color: $college2;
+    }
+
+    &--registration {
+        background: black;
+        border-bottom: 5px solid $registration2;
+    }
+
+    &--fantasy {
+        border-bottom: 5px solid $fantasy2;
+    }
+
+    &--yeezus {
+        border-bottom: 5px solid $yeezus2;
+    }
+
+    &--ghosts {
+        background: $ghosts;
+    }
+
+    @include mobile {
+        align-items: center;
+    }
+
+    select {
+        height: 30px;
+
+        margin: 25px;
+
+        outline: none;
+    }
+}
